@@ -7,6 +7,33 @@ Notes API is a *short texts saving* service similar to its physical paper presen
 # Group Notes
 Notes related resources of the **Notes API**
 
+
+
+##Products Collection [/products]
+### List all Notes [GET]
++ Response 200 (application/json)
+
+        [{
+          "id": 1, "name": "Spinnaker"
+        }, 
+        {
+          "id": 2, "name": "Genoa jib"
+        },
+        {
+          "id": 3, "name": "Moon raker"
+        }]
+
+### Create a Note [POST]
++ Request (application/json)
+
+        { "name": "Main sail" }
+
++ Response 201 (application/json)
+
+        { "id": 4, "name": "Main sail." }
+
+
+
 ## Notes Collection [/notes]
 ### List all Notes [GET]
 + Response 200 (application/json)
